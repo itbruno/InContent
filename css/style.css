@@ -1,0 +1,161 @@
+@charset 'utf-8';
+/*------------------------------
+|   Image Content Hover | CSS3  |
+|   Author: Bruno Rodrigues     |
+|   url: http://bit.ly/BrunoTw  |
+-------------------------------*/
+
+@import url('reset.css');
+
+/*Globals*/
+body{
+    background: #393646;
+    color: #fff;    
+    font-size: 14px;
+    font-family: trebuchet ms;
+    height: 100%;
+}
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+p,h1{ 
+    font-family: trebuchet ms;
+    text-shadow: 1px 1px 1px rgba(21,21,21,0.30);
+    font-weight:normal;
+}
+p{
+    font-size: 1em;
+}
+h1{
+    font-size: 3.0em;
+    line-height: 40px;
+}
+a{
+    text-decoration:none;
+    color: #253957;
+}
+a:hover{
+    color: #fff;
+}
+img{
+    max-width:100%;
+}
+.wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.pic{
+    max-width: 300px;
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;   
+    float: left;
+    display: inline-block;
+    
+    animation: anima 2s;
+    -webkit-animation: anima 2s;
+  
+   backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+.pic-caption{
+    cursor: crosshair;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background: rgba(130,163,212, 0.92);
+    opacity:0;
+    padding: 10px;
+    text-align:center;
+}
+
+.pic-image{
+     -webkit-transform: scale(1.1);
+             transform: scale(1.1);
+}
+.pic:hover .pic-image{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+.pic-title{
+    font-size: 1.8em;
+}
+/*All classes with same attribute*/
+a ,a:hover,
+.pic .pic-image,
+.pic-caption,
+.pic:hover .pic-caption,
+.pic:hover img{
+     transition: all 0.5s ease;
+    -webkit-transition: all 0.5 ease;  
+}
+
+/*Effects in Caption*/
+.pic:hover .bottom-to-top,
+.pic:hover .top-to-bottom,
+.pic:hover .left-to-right,
+.pic:hover .right-to-left{
+    opacity: 1;
+}
+/*Bottom to Top*/
+.bottom-to-top{
+    top:50%;    
+    left:2.5%;
+}
+.pic:hover .bottom-to-top{
+    top:2.5%
+}
+/*Top to Bottom*/
+.top-to-bottom{
+    bottom:50%;    
+    left:2.5%;
+}
+.pic:hover .top-to-bottom{
+    bottom: 2.5%;
+}
+/*Left to Right*/
+.left-to-right{
+    top:2.5%;
+    right:50%;
+}
+.pic:hover .left-to-right{
+    right: 2.5%;
+}
+/*Right to Left*/
+.right-to-left{
+    top:2.5%;
+    left:50%;
+}
+.pic:hover .right-to-left{
+    left: 2.5%;
+}
+
+/*Animation Effect*/
+@keyframes anima{
+    from{
+        margin-top: -50px;
+        opacity: 0;
+        -webkit-opacity: 0;
+    }
+    to{
+        margin: auto;
+        opacity: 1;
+        -webkit-opacity: 1;
+    }
+}
+@-webkit-keyframes anima{
+    from{
+        margin-left: -20px;
+        opacity: 0;
+        -webkit-opacity: 0;
+    }
+    to{
+        margin-left: 10px;
+        opacity: 1;
+        -webkit-opacity: 1;
+    }
+}
