@@ -1,3 +1,4 @@
+
 @import 'reset.css';
 
 /*Globals*/
@@ -62,19 +63,23 @@ header{
     margin: 10px;   
     float: left;
     display: inline-block;
-    
+
     animation: anima 2s;
     -webkit-animation: anima 2s;
   
    backface-visibility:hidden;
     -webkit-backface-visibility:hidden;
 }
+.pic-3d{
+    -webkit-perspective: 500;
+    -webkit-transform-style: preserve-3d;
+}
 
 .pic-caption{
     cursor: crosshair;
     position: absolute;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     background: @maincolor;
     opacity:0;
     padding: 10px;
@@ -115,77 +120,77 @@ a ,a:hover,
 /*Bottom to Top*/
 .bottom-to-top{
     top:50%;    
-    left:2.5%;
+    left:0%;
 }
 .pic:hover .bottom-to-top{
-    top:2.5%
+    top:0;
+    left:0;
 }
 /*Top to Bottom*/
 .top-to-bottom{
     bottom:50%;    
-    left:2.5%;
+    left:0;
 }
 .pic:hover .top-to-bottom{
-    bottom: 2.5%;
+    left:0;
+    bottom:0;
 }
 /*Left to Right*/
 .left-to-right{
-    top:2.5%;
+    top:0;
     right:50%;
 }
 .pic:hover .left-to-right{
-    right: 2.5%;
+    right:0;
+    top:0;
 }
 
 /*Right to Left*/
 .right-to-left{
-    top:2.5%;
+    top:0;
     left:50%;
 }
 .pic:hover .right-to-left{
-    left: 2.5%;
+    left:0;
+    top:0;
 }
 /*Rotate in*/
 .rotate-in{
     transform: rotate(90deg) scale(0.1);
-    top:2.5%;
-    left: 2.5%;
+    top:0;
+    left: 0;
 }
 .pic:hover .rotate-in{
     transform: rotate(360deg) scale(1);
-    left:2.5%;
 }
 /*Rotate out*/
 .rotate-out{
     transform: rotate(90deg) scale(3.0);
-    top:2.5%;
-    left: 2.5%;
+    top:0%;
+    left: 0%;
 }
 .pic:hover .rotate-out{
     transform: rotate(360deg) scale(1);
-    left:2.5%;
 }
 
 /*Open Up*/
 .open-up{
     transform: rotateX(90deg);
-    top:2.5%;
-    left: 2.5%;
+    top:0%;
+    left: 0%;
 }
 .pic:hover .open-up{
     transform: rotateX(0);
-    left:2.5%;
 }
 
 /*Open Side*/
 .open-side{
     transform: rotateY(90deg);
-    top:2.5%;
-    left: 2.5%;
+    left:0;
+    top:0;
 }
 .pic:hover .open-side{
     transform: rotateY(0deg);
-    left:2.5%;
 }
 
 /*Animation Effect*/
