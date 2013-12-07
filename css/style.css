@@ -1,24 +1,37 @@
 @import 'reset.css';
 
-/*Globals*/
+@import url(http://font-style: em;
 
+googleapis.com/css?family=Open+Sans);
+/*Globals*/
 body {
-  background: #f5f5f5;
+  background: rgba(44, 62, 80, 0.92);
   color: #fff;
   font-size: 14px;
-  font-family: 'trebuchet ms', HelveticaNeue, arial;
+  font-family: 'Open Sans', sans-serif, 'trebuhet ms', HelveticaNeue, arial;
   height: 100%;
   line-height: 20px;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.cl {
+  display: block;
+}
+
+.cl:after {
+  content: '';
+  display: block;
+  clear: both;
+  *zoom: 1;
 }
 
 p {
-  font-size: 1em;
+  line-height: 2.0em;
 }
 
 h1 {
@@ -28,7 +41,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #253957;
+  color: #4a5c6e;
 }
 
 a:hover {
@@ -39,20 +52,48 @@ img {
   max-width: 100%;
 }
 
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
 header {
   padding: 30px 20px;
-  background: rgba(130, 163, 212, 0.92);
+  background: #405264;
   color: #ffffff;
   margin-bottom: 20px;
-  -webkit-box-shadow: 0 0 5px #a1a1a1;
-  box-shadow: 0 0 5px #a1a1a1;
+}
+
+.btn-download {
+  background: #182a3c;
+  color: #7c8ea0;
+  padding: 20px 50px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btn-download:hover {
+  background: #5e7082;
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  text-align: center;
 }
+
+footer {
+  margin-top: 30px;
+  background: #182a3c;
+  color: #7c8ea0;
+  padding: 20px 0;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+/*--- CONTENT STRUCTURE ---*/
 
 .pic {
   max-width: 300px;
@@ -75,11 +116,11 @@ header {
 }
 
 .pic-caption {
-  cursor: crosshair;
+  cursor: default;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(130, 163, 212, 0.92);
+  background: rgba(44, 62, 80, 0.92);
   opacity: 0;
   padding: 10px;
   text-align: center;
@@ -101,7 +142,7 @@ header {
   font-size: 1.8em;
 }
 
-/*All classes with same attribute*/
+/*All classes with similar attribute*/
 
 a,
 a:hover,
@@ -113,7 +154,7 @@ a:hover,
   transition: all 0.5s ease;
 }
 
-/*Effects in Caption*/
+/*--- EFFECTS AND TRANSITIONS ---*/
 
 .pic:hover .bottom-to-top,
 .pic:hover .top-to-bottom,
@@ -122,7 +163,15 @@ a:hover,
 .pic:hover .rotate-in,
 .pic:hover .rotate-out,
 .pic:hover .open-up,
-.pic:hover .open-side {
+.pic:hover .open-down,
+.pic:hover .open-left,
+.pic:hover .open-right,
+.pic:hover .come-left,
+.pic:hover .come-right {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
   opacity: 1;
 }
 
@@ -130,7 +179,7 @@ a:hover,
 
 .bottom-to-top {
   top: 50%;
-  left: 0%;
+  left: 0;
 }
 
 .pic:hover .bottom-to-top {
@@ -196,8 +245,8 @@ a:hover,
   -webkit-transform: rotate(90deg) scale(3);
   -ms-transform: rotate(90deg) scale(3);
   transform: rotate(90deg) scale(3);
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
 }
 
 .pic:hover .rotate-out {
@@ -208,12 +257,28 @@ a:hover,
 
 /*Open Up*/
 
+.open-down {
+  -webkit-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+  top: 0;
+  left: 0;
+}
+
+.pic:hover .open-down {
+  -webkit-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  transform: rotateX(0);
+}
+
+/*Open down*/
+
 .open-up {
-  -webkit-transform: rotateX(90deg);
-  -ms-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  top: 0%;
-  left: 0%;
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  top: 0;
+  left: 0;
 }
 
 .pic:hover .open-up {
@@ -222,20 +287,68 @@ a:hover,
   transform: rotateX(0);
 }
 
-/*Open Side*/
+/*Open Left*/
 
-.open-side {
-  -webkit-transform: rotateY(90deg);
-  -ms-transform: rotateY(90deg);
-  transform: rotateY(90deg);
+.open-left {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   left: 0;
   top: 0;
 }
 
-.pic:hover .open-side {
+.pic:hover .open-left {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
+}
+
+/*Open Right*/
+
+.open-right {
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  left: 0;
+  top: 0;
+}
+
+.pic:hover .open-right {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+/*Open Come In*/
+
+.come-left {
+  -webkit-transform: rotateY(90deg) rotateX(90deg);
+  -ms-transform: rotateY(90deg) rotateX(90deg);
+  transform: rotateY(90deg) rotateX(90deg);
+  left: 0;
+  top: 0;
+}
+
+.pic:hover .come-left {
+  -webkit-transform: rotateY(0) rotateX(0);
+  -ms-transform: rotateY(0) rotateX(0);
+  transform: rotateY(0) rotateX(0);
+}
+
+/*Open Come Out*/
+
+.come-right {
+  -webkit-transform: rotateY(-90deg) rotateX(-90deg);
+  -ms-transform: rotateY(-90deg) rotateX(-90deg);
+  transform: rotateY(-90deg) rotateX(-90deg);
+  left: 0;
+  top: 0;
+}
+
+.pic:hover .come-right {
+  -webkit-transform: rotateY(0) rotateX(0);
+  -ms-transform: rotateY(0) rotateX(0);
+  transform: rotateY(0) rotateX(0);
 }
 
 /*Animation Effect*/
