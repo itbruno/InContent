@@ -6,7 +6,6 @@ googleapis.com/css?family=Open+Sans);
 /*Globals*/
 body {
   background: rgba(44, 62, 80, 0.92);
-  color: #fff;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif, 'trebuhet ms', HelveticaNeue, arial;
   height: 100%;
@@ -34,9 +33,22 @@ p {
   line-height: 2.0em;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 40px;
+}
+
 h1 {
   font-size: 3.0em;
-  line-height: 40px;
+}
+
+h2 {
+  font-size: 2.0em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
 
 a {
@@ -52,12 +64,52 @@ img {
   max-width: 100%;
 }
 
+/*table*/
+
+table {
+  width: 100%;
+  margin: 10px 0;
+}
+
+table td {
+  padding: 10px 20px;
+  background: #f5f5f5;
+  border: 1px solid #d2d2d2;
+}
+
+table td:first-child {
+  width: 25%;
+}
+
+table td.title {
+  background: #e5e5e5 !important;
+}
+
 .pull-right {
   float: right;
 }
 
 .pull-left {
   float: left;
+}
+
+label {
+  background: #e0e0e0;
+  border: 1px solid #d0d0d0;
+  font-size: 0.9em;
+  padding: 0 2px;
+  border-radius: 3px;
+}
+
+pre {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  line-height: 22px;
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  margin: 10px 0;
 }
 
 header {
@@ -73,10 +125,23 @@ header {
   padding: 20px 50px;
   display: inline-block;
   border-radius: 5px;
+  margin-top: -65px;
 }
 
 .btn-download:hover {
   background: #5e7082;
+}
+
+.how-to-use {
+  background: #f0f0f0;
+  padding: 20px 0;
+  margin-top: 30px;
+  color: #555;
+}
+
+.how-to-use h2 {
+  border-bottom: 1px solid #c5c5c5;
+  margin-bottom: 10px;
 }
 
 .wrapper {
@@ -85,12 +150,12 @@ header {
 }
 
 footer {
-  margin-top: 30px;
   background: #182a3c;
   color: #7c8ea0;
   padding: 20px 0;
   text-align: left;
   font-size: 0.9em;
+  clear: both;
 }
 
 /*--- CONTENT STRUCTURE ---*/
@@ -101,8 +166,8 @@ footer {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  float: left;
   display: inline-block;
+  color: #fff;
   animation: anima 2s;
   -webkit-animation: anima 2s;
   -ms-backface-visibility: hidden;
@@ -374,5 +439,31 @@ a:hover,
   to {
     margin-left: 10px;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .pic {
+    display: block;
+    margin: 10px auto;
+    max-width: 400px;
+    max-height: 300px;
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .btn-download {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .wrapper {
+    padding: 10px;
   }
 }
