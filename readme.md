@@ -1,6 +1,4 @@
 <h1>InContent</h1>
-<p>Image content hover module</p>
-
 <h2>How To Use</h2>
 <p>In your HTML document, put the follow code for call the CSS: </p>
 <pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/incontent.css&quot; type=&quot;text/css&quot; /&gt;</pre>
