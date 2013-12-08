@@ -1,6 +1,7 @@
 
 @import 'reset.css';
 @import url(http://font-style: em;googleapis.com/css?family=Open+Sans);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
 @color1: rgba(231, 76, 60, 0.92);
 @color2: rgba(41, 128, 185, 0.92);
@@ -118,15 +119,19 @@ header{
     margin-bottom: 20px;   
 }
 
-.btn-download{
-    background: @maincolor - rgb(20,20,20);
-    color: @maincolor + rgb(80,80,80) ;
+.btn{
     padding: 20px 50px;
     display: inline-block;
     border-radius: 5px;
-    margin-top: -65px;
+    color: #fff;
+    margin: 5px 0;
+    background: @maincolor - rgb(20,20,20);
+    color: @maincolor + rgb(80,80,80) ;   
     &:hover{
         background: @maincolor + rgb(50,50,50);
+    }
+    &.btn-download{
+        margin-top: -65px;
     }
 }
 
@@ -137,8 +142,20 @@ header{
     color: #555;
     & h2{
         border-bottom: 1px solid #c5c5c5;
-        margin-bottom:10px;
+        margin:10px 0;
     }
+    & .btns-end{
+        clear: both;
+        margin: 20px 0;
+        & .btn{
+            margin-right:10px;
+
+            &:last-child{
+                margin-right:0;
+            }
+        }
+    }
+
 }
 .wrapper{
     max-width: 1000px;
@@ -151,6 +168,11 @@ footer{
     text-align:left;
     font-size: 0.9em;
     clear: both;
+}
+
+.fa{
+    font-size: 1.4em;   
+    margin-right: 10px;
 }
 
 /*--- CONTENT STRUCTURE ---*/
@@ -367,7 +389,7 @@ a ,a:hover,
     }
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 600px){
     .pic{
         display:block;
         margin: 10px auto;
@@ -378,11 +400,16 @@ a ,a:hover,
     header{
         text-align: center;
     }
-    .btn-download{
+    .btn{
         width: 100%;
         float: none;
         text-align:center;
-        margin-top: 20px;
+        margin: 5px 0;
+       
+    }
+    .btn-download{
+        float: none;
+        margin-top: 20px !important;
     }
     .wrapper{
         padding:10px;
