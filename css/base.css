@@ -1,0 +1,126 @@
+@import 'reset.css';
+
+@import url(http://font-style: em;
+
+googleapis.com/css?family=Open+Sans);
+/*Globals*/
+body {
+  background: rgba(44, 62, 80, 0.92);
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif, 'trebuhet ms', HelveticaNeue, arial;
+  height: 100%;
+  line-height: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.cl {
+  display: block;
+}
+
+.cl:after {
+  content: '';
+  display: block;
+  clear: both;
+  *zoom: 1;
+}
+
+p {
+  line-height: 2.0em;
+}
+
+h1 {
+  font-size: 3.0em;
+  line-height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #4a5c6e;
+}
+
+a:hover {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+header {
+  padding: 30px 20px;
+  background: #405264;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.btn-download {
+  background: #182a3c;
+  color: #7c8ea0;
+  padding: 20px 50px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.btn-download:hover {
+  background: #5e7082;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 30px;
+  background: #182a3c;
+  color: #7c8ea0;
+  padding: 20px 0;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+/*Animation Effect*/
+
+@keyframes anima {
+  from {
+    margin-top: -50px;
+    opacity: 0;
+  }
+
+  to {
+    margin: auto;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anima {
+  from {
+    margin-left: -20px;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 10px;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .wrapper {
+    padding: 20px;
+  }
+}

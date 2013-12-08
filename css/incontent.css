@@ -93,6 +93,44 @@ footer {
   font-size: 0.9em;
 }
 
+/*Animation Effect*/
+
+@keyframes anima {
+  from {
+    margin-top: -50px;
+    opacity: 0;
+  }
+
+  to {
+    margin: auto;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes anima {
+  from {
+    margin-left: -20px;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 10px;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .wrapper {
+    padding: 20px;
+  }
+}
+
+/*------------------------------------------|
+|   Title: InContent;                       |
+|   Author: Bruno Rodrigues;                |
+|   URL: bit.ly/BrunoTw                     |
+|------------------------------------------*/
+
 /*--- CONTENT STRUCTURE ---*/
 
 .pic {
@@ -101,7 +139,6 @@ footer {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  float: left;
   display: inline-block;
   animation: anima 2s;
   -webkit-animation: anima 2s;
@@ -351,28 +388,13 @@ a:hover,
   transform: rotateY(0) rotateX(0);
 }
 
-/*Animation Effect*/
-
-@keyframes anima {
-  from {
-    margin-top: -50px;
-    opacity: 0;
-  }
-
-  to {
-    margin: auto;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes anima {
-  from {
-    margin-left: -20px;
-    opacity: 0;
-  }
-
-  to {
-    margin-left: 10px;
-    opacity: 1;
+@media screen and (max-width: 560px) {
+  .pic {
+    max-width: 400px;
+    max-height: 300px;
+    display: block;
+    -webkit-animation: none;
+    animation: none;
+    margin: 10px auto;
   }
 }
