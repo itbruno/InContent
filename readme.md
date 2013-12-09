@@ -12,7 +12,9 @@
 	&lt;/span&gt;
 &lt;/div&gt;</pre>
 
-<p>The <code>.bottom-to-top</code> is the class of effect that your choice, see example:</p>
+<p>The <code>.bottom-to-top</code> is the class of effect that your choice.</p>
+
+<p>See demo <a href="http://bit.ly/inContent" title="See demo">here.</p>
 
 <p>Here is the list of classes and effect that you can use:	</p>
 <table>
