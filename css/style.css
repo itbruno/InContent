@@ -211,9 +211,14 @@ footer {
   width: 100%;
   height: 100%;
   background: rgba(44, 62, 80, 0.92);
-  opacity: 0;
   padding: 10px;
   text-align: center;
+  
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
 }
 
 .pic-image {
@@ -318,6 +323,7 @@ a:hover,
 .rotate-in {
   -webkit-transform: rotate(90deg) scale(0.1);
   -ms-transform: rotate(90deg) scale(0.1);
+  -moz-transform: rotate(90deg) scale(0.1);
   transform: rotate(90deg) scale(0.1);
   top: 0;
   left: 0;
@@ -326,6 +332,7 @@ a:hover,
 .pic:hover .rotate-in {
   -webkit-transform: rotate(360deg) scale(1);
   -ms-transform: rotate(360deg) scale(1);
+  -moz-transform: rotate(360deg) scale(1);
   transform: rotate(360deg) scale(1);
 }
 
@@ -334,6 +341,7 @@ a:hover,
 .rotate-out {
   -webkit-transform: rotate(90deg) scale(3);
   -ms-transform: rotate(90deg) scale(3);
+  -moz-transform: rotate(90deg) scale(3);
   transform: rotate(90deg) scale(3);
   top: 0;
   left: 0;
@@ -342,6 +350,7 @@ a:hover,
 .pic:hover .rotate-out {
   -webkit-transform: rotate(360deg) scale(1);
   -ms-transform: rotate(360deg) scale(1);
+  -moz-transform: rotate(360deg) scale(1);
   transform: rotate(360deg) scale(1);
 }
 
@@ -350,6 +359,7 @@ a:hover,
 .open-down {
   -webkit-transform: rotateX(-180deg);
   -ms-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
   transform: rotateX(-180deg);
   top: 0;
   left: 0;
@@ -358,6 +368,7 @@ a:hover,
 .pic:hover .open-down {
   -webkit-transform: rotateX(0);
   -ms-transform: rotateX(0);
+  -moz-transform: rotateX(0);
   transform: rotateX(0);
 }
 
@@ -366,6 +377,7 @@ a:hover,
 .open-up {
   -webkit-transform: rotateX(180deg);
   -ms-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
   transform: rotateX(180deg);
   top: 0;
   left: 0;
@@ -374,6 +386,7 @@ a:hover,
 .pic:hover .open-up {
   -webkit-transform: rotateX(0);
   -ms-transform: rotateX(0);
+  -moz-transform: rotateX(0);
   transform: rotateX(0);
 }
 
@@ -382,6 +395,7 @@ a:hover,
 .open-left {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
   left: 0;
   top: 0;
@@ -390,6 +404,7 @@ a:hover,
 .pic:hover .open-left {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 
@@ -398,6 +413,7 @@ a:hover,
 .open-right {
   -webkit-transform: rotateY(-180deg);
   -ms-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   left: 0;
   top: 0;
@@ -406,6 +422,7 @@ a:hover,
 .pic:hover .open-right {
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 
@@ -414,6 +431,7 @@ a:hover,
 .come-left {
   -webkit-transform: rotateY(90deg) rotateX(90deg);
   -ms-transform: rotateY(90deg) rotateX(90deg);
+  -moz-transform: rotateY(90deg) rotateX(90deg);
   transform: rotateY(90deg) rotateX(90deg);
   left: 0;
   top: 0;
@@ -422,6 +440,7 @@ a:hover,
 .pic:hover .come-left {
   -webkit-transform: rotateY(0) rotateX(0);
   -ms-transform: rotateY(0) rotateX(0);
+  -moz-transform: rotateY(0) rotateX(0);
   transform: rotateY(0) rotateX(0);
 }
 
@@ -430,6 +449,7 @@ a:hover,
 .come-right {
   -webkit-transform: rotateY(-90deg) rotateX(-90deg);
   -ms-transform: rotateY(-90deg) rotateX(-90deg);
+  -moz-transform: rotateY(-90deg) rotateX(-90deg);
   transform: rotateY(-90deg) rotateX(-90deg);
   left: 0;
   top: 0;
@@ -438,6 +458,7 @@ a:hover,
 .pic:hover .come-right {
   -webkit-transform: rotateY(0) rotateX(0);
   -ms-transform: rotateY(0) rotateX(0);
+  -moz-transform: rotateY(0) rotateX(0);
   transform: rotateY(0) rotateX(0);
 }
 
