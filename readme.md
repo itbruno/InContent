@@ -14,7 +14,7 @@
 
 <p>The <code>.bottom-to-top</code> is the class of effect that your choice.</p>
 
-<p>See demo <a href="http://bit.ly/inContent" title="See demo">here.</p>
+<h2>See demo <a href="http://bit.ly/inContent" title="See demo">here.</h2>
 
 <p>Here is the list of classes and effect that you can use:	</p>
 <table>
