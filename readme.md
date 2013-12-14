@@ -76,4 +76,14 @@
 	</tr>
 </table>
 
+<h2>Test in your Mobile Device</h2>
+<p>
+	Use some app for read the QR code and test in your mobile.
+	If you dont have, what do you waiting?! =D					
+</p>
+<p>
+	Take a look, its Free - QR Reader: <a href="http://bit.ly/18rWt4U">iPhone</a>, <a 	href="http://bit.ly/18LEhkB">Android</a> and <a href="http://bit.ly/1bFhgzY">Windows Phone</a>.
+</p>
+<img src="http://i.imgur.com/fq2Aza6.png" alt="InContent - QRcode" />
+
 <a href="http://bit.ly/BrunoTw" >Say hello</a>
