@@ -10,7 +10,7 @@
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="description" content="InContent, is a CSS module for description and pictures within internal content with LESS." >
+	<meta name="description" content="InContent, a Image content with description created with CSS3 and LESS. " >
 	
   	<meta name="author" content="Bruno Rodrigues">
   	<meta name="keywords" content="Image content, InContent, in content, content inside image, content in image, UI, LESS, css3, CSS transitions, css animations, image description, pure css" />
@@ -245,13 +245,26 @@
 			
 			<div class="btns-end">
 				<a href="https://github.com/brunodsgn/InContent/archive/master.zip" class="btn"><i class="fa fa-download"></i>DOWNLOAD .ZIP</a>
-
 				<a href="http://github.com/brunodsgn/incontent" class="btn"><i class="fa fa-github"></i>VIEW IN GITHUB</a>
-
-				<a href="mailto:brunodesign1206@gmail.com" class="btn"><i class="fa fa-comments"></i>SAY HELLO</a>
-
-				<a href="http://bit.ly/BrunoTw" class="btn"><i class="fa fa-twitter"></i>FOLLOW TWITTER</a>
+				<a href="http://bit.ly/BrunoTw" class="btn"><i class="fa fa-twitter"></i>SAY HELLO!</a>
+				<a class="btn qrcode"><i class="fa fa-qrcode"></i>QR CODE</a>
 			</div>
+			
+			<!-- MODAL -->
+			<div class="modal">
+		    	<span class="bt-close-modal pull-right">close x</span>    
+		        <div class="wrapper">
+					<h2>Test in your Mobile Device</h2>
+					<p>
+						Use some app for read the QR code and test in your mobile.
+						If you dont have, what do you waiting?! =D					
+					</p>
+					<p>
+						Take a look, its Free - QR Reader: <a href="http://bit.ly/18rWt4U">iPhone</a>, <a href="http://bit.ly/18LEhkB">Android</a> and <a href="http://bit.ly/1bFhgzY">Windows Phone</a>.
+					</p>
+					<img src="img/qrcode.jpg" alt="InContent - QRcode" />
+				</div>
+    		</div>
 
 		</div>
 
@@ -266,7 +279,18 @@
 		</section>
 	</footer>
 
-<!-- Modernizr Lib -->
+<!-- Libs -->
 	<script src="libs/modernizr.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script>
+		//Open Modal
+		$(".qrcode").click(function(){
+		    $(".modal").toggle(300);
+		});
+		//Close Modal
+		$(".bt-close-modal").click(function(){
+		    $(".modal").hide(500);
+		});
+	</script>
 </body>
 </html>

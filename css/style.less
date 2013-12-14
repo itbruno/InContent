@@ -65,7 +65,9 @@ a{
     color: @maincolor + rgb(30,30,30) ;
 }
 a:hover{
-    color: #fff;
+    cursor:pointer;
+    color: @maincolor + rgb(100,100,100);
+    text-decoration: underline;
 }
 img{
     max-width:100%;
@@ -90,7 +92,6 @@ table td{
     }
     
 }
-
 .pull-right{float: right;}
 .pull-left{float: left;}
 
@@ -130,6 +131,8 @@ header{
     color: @maincolor + rgb(80,80,80) ;   
     &:hover{
         background: @maincolor + rgb(50,50,50);
+        color: #fff;
+        text-decoration: none;
     }
     &.btn-download{
         margin-top: -65px;
@@ -367,6 +370,29 @@ a ,a:hover,
     transform: rotateY(0) rotateX(0);
 }
 
+/*MODAL*/
+.modal{
+    /*background: @maincolor;
+    box-shadow: 0 0 5px #333;
+    max-width: 260px;
+    margin: 50px auto;
+    border-radius:5px;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.8);
+    color: #fff;
+    z-index: 99999;*/
+     display:none;
+ }
+ .bt-close-modal{
+    background: @maincolor - rgb(10,10,10);
+    cursor: pointer;
+    padding: 5px;
+    display: inline-block;
+    color: #fff;
+    margin:3px;
+    border-radius: 3px;
+}
 
 /*Animation Effect*/
 @keyframes anima{
