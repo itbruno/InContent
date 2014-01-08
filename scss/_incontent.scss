@@ -118,81 +118,97 @@ a ,a:hover,
 /*Rotate in*/
 .rotate-in{
     transform: rotate(90deg) scale(0.1);
+    -webkit-transform: rotate(90deg) scale(0.1);
     top:0;
     left: 0;
 }
 .pic:hover .rotate-in{
     transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
 }
 /*Rotate out*/
 .rotate-out{
     transform: rotate(90deg) scale(3.0);
+    -webkit-transform: rotate(90deg) scale(3.0);
     top:0;
     left: 0;
 }
 .pic:hover .rotate-out{
     transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
 }
 
 /*Open Up*/
 .open-down{
     transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
     top:0;
     left: 0;
 }
 .pic:hover .open-down{
     transform: rotateX(0);
+    -webkit-transform: rotateX(0);
 }
 
 
 /*Open down*/
 .open-up{
     transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
     top:0;
     left: 0;
 }
 .pic:hover .open-up{
     transform: rotateX(0);
+    -webkit-transform: rotateX(0);
 }
 
 /*Open Left*/
 .open-left{
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     left:0;
     top:0;
 }
 .pic:hover .open-left{
     transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
 }
 
 /*Open Right*/
 .open-right{
     transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
     left:0;
     top:0;
 }
 .pic:hover .open-right{
     transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
 }
 
 /*Open Come In*/
 .come-left{
     transform: rotateY(90deg) rotateX(90deg);
+    -webkit-transform: rotateY(90deg) rotateX(90deg);
     left:0;
     top:0;
 }
 .pic:hover .come-left{
     transform: rotateY(0) rotateX(0);
+    -webkit-transform: rotateY(0) rotateX(0);
 }
 
 /*Open Come Out*/
 .come-right{
     transform: rotateY(-90deg) rotateX(-90deg);
+    -webkit-transform: rotateY(-90deg) rotateX(-90deg);
     left:0;
     top:0;
 }
 .pic:hover .come-right{
     transform: rotateY(0) rotateX(0);
+    -webkit-transform: rotateY(0) rotateX(0);
 }
 
 @media screen and (max-width: 560px){
