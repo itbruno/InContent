@@ -1,0 +1,117 @@
+@import "http://font-style: em;googleapis.com/css?family=Open+Sans)";
+
+$color1: rgba(231, 76, 60, 0.92);
+$color2: rgba(41, 128, 185, 0.92);
+$color3: rgba(44, 62, 80,0.92);
+$color4: rgba(46, 204, 113,0.92);
+$color5: rgba(73, 73, 73,0.92);
+
+$maincolor: $color3;
+
+/*Globals*/
+body{
+    background: $maincolor;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif, 'trebuhet ms',HelveticaNeue, arial;
+    height: 100%;
+    line-height: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cl{
+    display:block;
+}
+.cl:after{
+    content:'';
+    display: block;
+    clear: both;
+    *zoom:1;
+}
+
+p{
+    line-height: 2.0em;
+}
+h1{
+    font-size: 3.0em;
+    line-height: 40px;
+}
+a{
+    text-decoration:none;
+    color: $maincolor + rgba(30,30,30,0.92) ;
+}
+a:hover{
+    color: #fff;
+}
+img{
+    max-width:100%;
+}
+
+.pull-right{float: right;}
+.pull-left{float: left;}
+
+header{
+    padding: 30px 20px;
+    background: $maincolor + rgba(20,20,20,0.92);
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-download{
+    background: $maincolor - rgba(20,20,20,0.92);
+    color: $maincolor + rgba(80,80,80,0.92) ;
+    padding: 20px 50px;
+    display: inline-block;
+    border-radius: 5px;
+    &:hover{
+        background: $maincolor + rgba(50,50,50,0.92);
+    }
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+footer{
+    margin-top: 30px;
+    background: $maincolor - rgba(20,20,20,0.92);
+    color: $maincolor + rgba(80,80,80,0.92) ;
+    padding: 20px 0;
+    text-align:left;
+    font-size: 0.9em;
+}
+
+
+
+/*Animation Effect*/
+@keyframes anima{
+    from{
+        margin-top: -50px;
+        opacity: 0;
+    }
+    to{
+        margin: auto;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes anima{
+    from{
+        margin-left: -20px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 10px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 560px){
+   .wrapper{
+    padding: 20px;
+   }
+}
