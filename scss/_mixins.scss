@@ -15,3 +15,22 @@
     -o-border-radius: $radius $radius $radius $radius;
     border-radius: $radius $radius $radius $radius;
 }
+
+// Clearfix
+@mixin clearfix{
+    &:before,
+    &:after{
+        content:'';
+        display: table;
+        clear: both;
+    }
+}
+
+// Opacity
+@mixin transparency($opacity){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+    filter: alpha(opacity=($opacity * 100));
+    -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;
+}
