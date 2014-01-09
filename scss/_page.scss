@@ -24,16 +24,6 @@ body{
     -webkit-box-sizing: border-box;
 }
 
-.cl{
-    display:block;
-}
-.cl:after{
-    content:'';
-    display: block;
-    clear: both;
-    *zoom:1;
-}
-
 p{
     line-height: 2.0em;
 }
@@ -52,8 +42,13 @@ img{
     max-width:100%;
 }
 
-.pull-right{float: right;}
-.pull-left{float: left;}
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
+}
 
 header{
     padding: 30px 20px;
@@ -76,7 +71,9 @@ header{
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
+    @include clearfix;
 }
+
 footer{
     margin-top: 30px;
     background: $maincolor - rgba(20,20,20,0.92);
@@ -86,32 +83,31 @@ footer{
     font-size: 0.9em;
 }
 
-
-
 /*Animation Effect*/
 @keyframes anima{
     from{
         margin-top: -50px;
-        opacity: 0;
+        @include transparency(0);
     }
     to{
         margin: auto;
-        opacity: 1;
+        @include transparency(1);
     }
 }
+
 @-webkit-keyframes anima{
     from{
         margin-left: -20px;
-        opacity: 0;
+        @include transparency(0);
     }
     to{
         margin-left: 10px;
-        opacity: 1;
+        @include transparency(1);
     }
 }
 
 @media screen and (max-width: 560px){
-   .wrapper{
-    padding: 20px;
-   }
+    .wrapper{
+        padding: 20px;
+    }
 }
