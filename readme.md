@@ -76,6 +76,11 @@
 	</tr>
 </table>
 
+<h2>License</h2>
+	<p>
+		InContent is released under MIT License.
+	</p>
+
 <h2>Test in your Mobile Device</h2>
 <p>
 	Use some app for read the QR code and test in your mobile.
