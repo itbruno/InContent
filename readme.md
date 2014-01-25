@@ -77,9 +77,7 @@
 </table>
 
 <h2>License</h2>
-	<p>
-		InContent is released under MIT License.
-	</p>
+InContent is released under MIT License.
 
 <h2>Test in your Mobile Device</h2>
 <p>
