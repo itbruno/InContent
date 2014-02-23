@@ -18,10 +18,6 @@ body{
     line-height: 20px;
 }
 
-.transition(@prop, @time, @type){
-    transition: @prop @time @type;
-}
-
 *{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -29,13 +25,7 @@ body{
 }
 
 .cl{
-    display:block;
-}
-.cl:after{
-    content:'';
-    display: block;
-    clear: both;
-    *zoom:1;
+    .clearfix();
 }
 
 p{
@@ -71,7 +61,7 @@ header{
     color: @maincolor + rgb(80,80,80) ;
     padding: 20px 50px;
     display: inline-block;
-    border-radius: 5px;
+    .radius(5px);
     &:hover{
         background: @maincolor + rgb(50,50,50);
     }
@@ -96,21 +86,21 @@ footer{
 @keyframes anima{
     from{
         margin-top: -50px;
-        opacity: 0;
+        .transparency(0);
     }
     to{
         margin: auto;
-        opacity: 1;
+        .transparency(1);
     }
 }
 @-webkit-keyframes anima{
     from{
         margin-left: -20px;
-        opacity: 0;
+        .transparency(0);
     }
     to{
         margin-left: 10px;
-        opacity: 1;
+        .transparency(1);
     }
 }
 
