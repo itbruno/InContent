@@ -1,0 +1,36 @@
+// Mixins
+
+// Transition
+@mixin transition($prop, $time, $type){
+    -webkit-transition: $prop $time $type;
+    -moz-transition: $prop $time $type;
+    -o-transition: $prop $time $type;
+    transition: $prop $time $type;
+}
+
+// Border Radius
+@mixin radius($radius){
+    -webkit-border-radius: $radius $radius $radius $radius;
+    -moz-border-radius: $radius $radius $radius $radius;
+    -o-border-radius: $radius $radius $radius $radius;
+    border-radius: $radius $radius $radius $radius;
+}
+
+// Clearfix
+@mixin clearfix{
+    &:before,
+    &:after{
+        content:'';
+        display: table;
+        clear: both;
+    }
+}
+
+// Opacity
+@mixin transparency($opacity){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
+    filter: alpha(opacity=($opacity * 100));
+    -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;
+}
