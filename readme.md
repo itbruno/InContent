@@ -1,7 +1,7 @@
 <h1>InContent</h1>
 <h2>How To Use</h2>
 <p>In your HTML document, put the follow code for call the CSS: </p>
-<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/incontent.css&quot; type=&quot;text/css&quot; /&gt;</pre>
+<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/sass-compiled.css&quot; type=&quot;text/css&quot; /&gt;</pre>
 
 <p>Put the code below in your HTML document:</p>
 <pre>&lt;div class=&quot;pic&quot;&gt;
