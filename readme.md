@@ -1,7 +1,10 @@
 <h1>InContent</h1>
 <h2>How To Use</h2>
-<p>In your HTML document, put the follow code for call the CSS: </p>
+<p>In your HTML document, put the follow code for call the LESS/SASS Compiled: </p>
+For <b>SASS</b> compiled:
 <pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/sass-compiled.css&quot; type=&quot;text/css&quot; /&gt;</pre>
+For <b>LESS</b> compiled:
+<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/less-compiled.css&quot; type=&quot;text/css&quot; /&gt;</pre>
 
 <p>Put the code below in your HTML document:</p>
 <pre>&lt;div class=&quot;pic&quot;&gt;
