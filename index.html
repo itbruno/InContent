@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>InContent, a Image content with description building with CSS3 and LESS.</title>
+	<title>InContent, a Image content with description building with CSS3 and SASS/LESS.</title>
 	<meta charset="utf-8" />
 	
 	<!-- Main CSS -->
@@ -13,7 +13,7 @@
 	<meta name="description" content="InContent, a Image content with description created with CSS3 and LESS. " >
 	
   	<meta name="author" content="Bruno Rodrigues">
-  	<meta name="keywords" content="Image content, InContent, in content, content inside image, content in image, UI, LESS, css3, CSS transitions, css animations, image description, pure css" />
+  	<meta name="keywords" content="Image content, InContent, in content, content inside image, content in image, UI, LESS, css3, CSS transitions, css animations, image description, pure css, SASS" />
 
   	<link rel="author" href="https://plus.google.com/+BrunoRodrigues01" />
   	<link rel="publisher" href="https://plus.google.com/+BrunoRodrigues01/posts" >
@@ -24,7 +24,7 @@
 	<header>
 		<div class="wrapper">
 			<h1>InContent</h1>
-			<p>InContent, a Image content with description created with CSS3 and LESS.</p>
+			<p>InContent, a Image content with description created with CSS3 and SASS/LESS.</p>
 
 			<a href="http://github.com/brunodsgn/InContent" class="btn btn-download pull-right"><i class="fa fa-download"></i> DOWNLOAD</a>
 
@@ -151,12 +151,21 @@
 			<h2 class="title-line">How To Use</h2>
 			
 			<p>Inside the <label for="">&lt;head&gt;</label> in your HTML, put the following code for call the CSS: </p>
-
-			<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/incontent.css&quot; type=&quot;text/css&quot; /&gt;</pre>
+			
+			<div class="highlight">
+				<span class="highlight-title">
+					Sass Version
+				</span>
+				<pre><span class="sass-version"></span>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/sass-compiled.css&quot; type=&quot;text/css&quot; /&gt;</pre>
+			</div>
 
 			<p>Put the code below in your HTML document:</p>
 			
 			<!-- Put this conde in your HTML file -->
+			<div class="highlight">
+				<span class="highlight-title">
+					HTML Document
+				</span>
 			<pre>&lt;div class=&quot;pic&quot;&gt;
 	&lt;img src=&quot;img/01.jpg&quot; class=&quot;pic-image&quot; alt=&quot;Pic&quot;/&gt;
 	&lt;span class=&quot;pic-caption bottom-to-top&quot;&gt;
@@ -164,6 +173,7 @@
 		&lt;p&gt;Some description or text.&lt;/p&gt;
 	&lt;/span&gt;
 &lt;/div&gt;</pre>
+</div>
 
 			<p>
 				The <label>.bottom-to-top</label> is the class with the effects of your choice, see example:
