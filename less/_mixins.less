@@ -1,0 +1,35 @@
+// Mixins
+
+// Transitions
+.transition(@prop, @time, @type){
+    -webkit-transition: @prop @time @type;
+    -moz-transition: @prop @time @type;
+    -o-transition: @prop @time @type;
+    transition: @prop @time @type;
+}
+
+// Border Radius
+.radius(@radius){
+    -webkit-border-radius: @radius @radius @radius @radius;
+    -moz-border-radius: @radius @radius @radius @radius;
+    -o-border-radius: @radius @radius @radius @radius;
+    border-radius: @radius @radius @radius @radius;
+}
+
+// Clearfix
+.clearfix{
+    &:before,
+    &:after{
+        content:'';
+        display: table;
+        clear: both;
+    }
+}
+
+// Opacity
+.transparency (@opacity) {
+	-webkit-opacity: @opacity;
+	-moz-opacity: @opacity;
+	opacity: @opacity;
+}
+
