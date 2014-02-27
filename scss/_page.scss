@@ -19,9 +19,7 @@ body{
 }
 
 *{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    @include prefix(box-sizing, border-box);
 }
 
 p{
@@ -62,7 +60,7 @@ header{
     color: $maincolor + rgba(80,80,80,0.92) ;
     padding: 20px 50px;
     display: inline-block;
-    border-radius: 5px;
+    @include prefix(border-radius, 5px);
     &:hover{
         background: $maincolor + rgba(50,50,50,0.92);
     }
