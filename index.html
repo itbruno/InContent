@@ -305,6 +305,9 @@
 	<script src="libs/modernizr.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 	<script>
+		document.addEventListener("touchstart", function(){}, true);
+	</script>
+	<script>
 		//Open Modal
 		$(".qrcode").click(function(){
 		    $(".modal").toggle(300);
@@ -314,17 +317,9 @@
 		    $(".modal").hide(500);
 		});
 
-		// $(".bottom-to-top, .top-to-bottom, .left-to-right, .right-to-left, .rotate-in, .rotate-out, .open-up, .open-down, .open-left, .open-right, .come-left, .come-right").dblclick(function(){	
-		// 	alert('test');
-		// 	style.opacity = '0';
-		// });
-		
-		$(document).ready(function() {
-		    $('.hover').bind('touchstart touchend', function(e) {
-		        e.preventDefault();
-		        $(this).toggleClass('hover_effect');
-		    });
-		});
+		$(".bottom-to-top, .top-to-bottom, .left-to-right, .right-to-left, .rotate-in, .rotate-out, .open-up, .open-down, .open-left, .open-right, .come-left, .come-right").dblclick(function(){	
+			style.opacity = '0';
+		})
 
 		
 
