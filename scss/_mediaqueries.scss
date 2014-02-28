@@ -4,6 +4,20 @@
     .wrapper{
         padding: 20px;
     }
+    .pic.hover_effect .bottom-to-top,
+    .pic.hover_effect .top-to-bottom,
+    .pic.hover_effect .left-to-right,
+    .pic.hover_effect .right-to-left,
+    .pic.hover_effect .rotate-in,
+    .pic.hover_effect .rotate-out,
+    .pic.hover_effect .open-up,
+    .pic.hover_effect .open-down,
+    .pic.hover_effect .open-left,
+    .pic.hover_effect .open-right,
+    .pic.hover_effect .come-left,
+    .pic.hover_effect .come-right{
+      @include transparency(1);
+    }
 }
 
 @media screen and (max-width: 600px){

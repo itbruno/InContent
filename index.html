@@ -314,9 +314,19 @@
 		    $(".modal").hide(500);
 		});
 
-		$(".bottom-to-top, .top-to-bottom, .left-to-right, .right-to-left, .rotate-in, .rotate-out, .open-up, .open-down, .open-left, .open-right, .come-left, .come-right").mouseout(function(){	
-			style.opacity = '0';
+		// $(".bottom-to-top, .top-to-bottom, .left-to-right, .right-to-left, .rotate-in, .rotate-out, .open-up, .open-down, .open-left, .open-right, .come-left, .come-right").dblclick(function(){	
+		// 	alert('test');
+		// 	style.opacity = '0';
+		// });
+		
+		$(document).ready(function() {
+		    $('.hover').bind('touchstart touchend', function(e) {
+		        e.preventDefault();
+		        $(this).toggleClass('hover_effect');
+		    });
 		});
+
+		
 
 	</script>
 </body>

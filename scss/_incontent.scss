@@ -52,7 +52,16 @@ a ,a:hover,
      @include prefix(transition, all 0.5s ease);
 }
 
+.transparent{
+    @include transparency(0);
+}
+
 /*--- EFFECTS AND TRANSITIONS ---*/
+
+.hover {
+    @include prefix(user-select, none);
+    @include prefix(touch-callout, none);
+}
 
 .pic:hover .bottom-to-top,
 .pic:hover .top-to-bottom,
