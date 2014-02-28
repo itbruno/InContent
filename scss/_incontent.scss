@@ -66,7 +66,10 @@ a ,a:hover,
 .pic:hover .open-right,
 .pic:hover .come-left,
 .pic:hover .come-right{
-  @include transparency(1);
+    @include transparency(1);
+    @include prefix(user-select, none);
+    @include prefix(touch-callout, none);
+    @include prefix(tap-highlight-color, rgba(0,0,0,0));
 }
 /*Bottom to Top*/
 .bottom-to-top{
