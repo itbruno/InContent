@@ -4,20 +4,6 @@
     .wrapper{
         padding: 20px;
     }
-    .pic:focus .bottom-to-top,
-    .pic:focus .top-to-bottom,
-    .pic:focus .left-to-right,
-    .pic:focus .right-to-left,
-    .pic:focus .rotate-in,
-    .pic:focus .rotate-out,
-    .pic:focus .open-up,
-    .pic:focus .open-down,
-    .pic:focus .open-left,
-    .pic:focus .open-right,
-    .pic:focus .come-left,
-    .pic:focus .come-right{
-      @include transparency(1);
-    }
 }
 
 @media screen and (max-width: 600px){
