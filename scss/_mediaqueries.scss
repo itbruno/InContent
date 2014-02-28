@@ -1,0 +1,48 @@
+// Media queries - Mobile 
+
+@media screen and (max-width: 560px){
+    .wrapper{
+        padding: 20px;
+    }
+    .pic:focus .bottom-to-top,
+    .pic:focus .top-to-bottom,
+    .pic:focus .left-to-right,
+    .pic:focus .right-to-left,
+    .pic:focus .rotate-in,
+    .pic:focus .rotate-out,
+    .pic:focus .open-up,
+    .pic:focus .open-down,
+    .pic:focus .open-left,
+    .pic:focus .open-right,
+    .pic:focus .come-left,
+    .pic:focus .come-right{
+      @include transparency(1);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .pic{
+        display:block;
+        margin: 10px auto;
+        max-width: 400px;
+        max-height: 300px;
+        animation: none;
+    }
+    header{
+        text-align: center;
+    }
+    .btn{
+        width: 100%;
+        float: none;
+        text-align:center;
+        margin: 5px 0;
+       
+    }
+    .btn-download{
+        float: none;
+        margin-top: 20px !important;
+    }
+    .wrapper{
+        padding:10px;
+    }
+}

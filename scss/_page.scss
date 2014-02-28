@@ -1,0 +1,230 @@
+@import "http://font-style: em;googleapis.com/css?family=Open+Sans)";
+@import "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
+$color1: rgba(231, 76, 60, 0.92);
+$color2: rgba(41, 128, 185, 0.92);
+$color3: rgba(44, 62, 80,0.92);
+$color4: rgba(46, 204, 113,0.92);
+$color5: rgba(73, 73, 73,0.92);
+
+$maincolor: $color3;
+
+/*Globals*/
+body{
+    background: $maincolor;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif, 'trebuhet ms',HelveticaNeue, arial;
+    height: 100%;
+    line-height: 20px;
+}
+
+*{
+    @include prefix(box-sizing, border-box);
+}
+
+p{
+    line-height: 2.0em;
+}
+h1,h2,h3{
+    line-height: 40px;
+}
+
+h1{
+    font-size: 3.0em;
+}
+
+h2{
+    font-size: 2.0em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+a{
+    text-decoration:none;
+    color: $maincolor + rgba(30,30,30,0.92) ;
+}
+a:hover{
+    color: #fff;
+}
+img{
+    max-width:100%;
+}
+
+/*table*/
+
+table{
+    width: 100%;
+    margin: 10px 0;
+    
+}
+table td{
+    padding: 10px 20px;
+    background: #f5f5f5;
+    border: 1px solid #d2d2d2;   
+    &:first-child{
+        width: 25%;
+    }
+    &.title{
+        background: #e5e5e5 !important;
+    }
+    
+}
+.pull-right{float: right;}
+.pull-left{float: left;}
+.cl{
+    display:block;
+}
+.cl:after{
+    content:'';
+    display: block;
+    clear: both;
+    *zoom:1;
+}
+
+label{
+    background: #e0e0e0;
+    border: 1px solid #d0d0d0;
+    font-size: 0.9em;
+    padding: 0 2px;
+    border-radius: 3px;
+}
+
+pre{
+    background: #e0e0e0;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0 0 3px 3px;
+    font-size: 0.9em;
+    line-height: 22px;
+    border: 1px solid #d0d0d0;
+    border-top:0;
+    width: 100%;
+    margin-bottom: 10px ;
+    overflow: auto;
+    position: relative;    
+}
+
+.highlight-title{
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border:1px solid #d0d0d0;
+    border-radius: 3px 3px 0 0 ;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
+}
+
+header{
+    padding: 30px 20px;
+    background: $maincolor + rgba(20,20,20,0.92);
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn{
+    padding: 20px 50px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px 0;
+    background: $maincolor - rgba(20,20,20, 0.92);
+    color: $maincolor + rgba(80,80,80, 0.92) ;   
+    &:hover{
+        background: $maincolor + rgba(50,50,50, 0.92);
+        color: #fff;
+        text-decoration: none;
+    }
+    &.btn-download{
+        margin-top: -65px;
+    }
+}
+
+.how-to-use{
+    background: #f0f0f0;
+    padding: 20px 0;
+    margin-top:30px;
+    color: #555;
+    & h2{
+        border-bottom: 1px solid #c5c5c5;
+        margin:10px 0;
+    }
+    & .btns-end{
+        clear: both;
+        margin: 20px 0;
+        & .btn{
+            margin-right:10px;
+
+            &:last-child{
+                margin-right:0;
+            }
+        }
+    }
+}
+/*MODAL*/
+.modal{
+    display:none;
+ }
+ .bt-close-modal{
+    background: $maincolor - rgba(10,10,10, 0.92);
+    cursor: pointer;
+    padding: 5px;
+    display: inline-block;
+    color: #fff;
+    margin:3px;
+    border-radius: 3px;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    @include clearfix();
+}
+
+footer{
+    background: $maincolor - rgba(20,20,20,0.92);
+    color: $maincolor + rgba(80,80,80,0.92) ;
+    padding: 20px 0;
+    text-align:left;
+    font-size: 0.9em;
+}
+
+.fa{
+    font-size: 1.4em;   
+    margin-right: 10px;
+}
+
+/*Animation Effect*/
+@keyframes anima{
+    from{
+        margin-top: -50px;
+        @include transparency(0);
+    }
+    to{
+        margin: auto;
+        @include transparency(1);
+    }
+}
+
+@-webkit-keyframes anima{
+    from{
+        margin-left: -20px;
+        @include transparency(0);
+    }
+    to{
+        margin-left: 10px;
+        @include transparency(1);
+    }
+}
+
+
+
