@@ -317,7 +317,15 @@
 		    $(".modal").hide(500);
 		});
 
-		
+		if(window.innerWidth <= 600){
+			$('.pic').mouseover(function(){
+				$('.pic-caption').css('opacity', '1');
+			});
+
+			$('.pic').mouseout(function(){
+				$('.pic-caption').css('opacity', '0');
+			});
+		}
 
 	</script>
 </body>
