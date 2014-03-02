@@ -52,10 +52,6 @@ a ,a:hover,
      @include prefix(transition, all 0.5s ease);
 }
 
-.transparent{
-    @include transparency(0);
-}
-
 /*--- EFFECTS AND TRANSITIONS ---*/
 
 .pic:hover .bottom-to-top,
@@ -71,9 +67,9 @@ a ,a:hover,
 .pic:hover .come-left,
 .pic:hover .come-right{
     @include transparency(1);
-    // @include prefix(user-select, none);
-    // @include prefix(touch-callout, none);
-    // @include prefix(tap-highlight-color, rgba(0,0,0,0));
+    @include prefix(user-select, none);
+    @include prefix(touch-callout, none);
+    @include prefix(tap-highlight-color, rgba(0,0,0,0));
 }
 /*Bottom to Top*/
 .bottom-to-top{

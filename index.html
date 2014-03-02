@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>InContent, a Image content with description building with CSS3 and SASS/LESS.</title>
+	<title>InContent - A content image hover effects.</title>
 	<meta charset="utf-8" />
 	
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/sass-compiled.css" />
+
+	<!-- Modrnizr Lib -->
+	<script src="libs/modernizr.js" type="text/javascript"></script>
 	
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta name="description" content="InContent, a Image content with description created with CSS3 and LESS. " >
-	
-  	<meta name="author" content="Bruno Rodrigues">
-  	<meta name="keywords" content="Image content, InContent, in content, content inside image, content in image, UI, LESS, css3, CSS transitions, css animations, image description, pure css, SASS" />
-
-  	<link rel="author" href="https://plus.google.com/+BrunoRodrigues01" />
-  	<link rel="publisher" href="https://plus.google.com/+BrunoRodrigues01/posts" >
 
 </head>
 <body>
@@ -24,10 +19,7 @@
 	<header>
 		<div class="wrapper">
 			<h1>InContent</h1>
-			<p>InContent, a Image content with description created with CSS3 and SASS/LESS.</p>
-
-			<a href="http://github.com/brunodsgn/InContent" class="btn btn-download pull-right"><i class="fa fa-download"></i> DOWNLOAD</a>
-
+			<p>Image content with description building with CSS3 and LESS/SASS.</p>
 		</div>
 	</header>
 	
@@ -145,155 +137,11 @@
 	</section>
 	<!-- End of effects -->
 
-	<section class="how-to-use">
-		<div class="wrapper cf">
-			
-			<h2 class="title-line">How To Use</h2>
-			
-			<p>Inside the <label for="">&lt;head&gt;</label> in your HTML, put the following code for call the CSS: </p>
-			
-			<div class="highlight">
-				<span class="highlight-title">
-					SASS Version
-				</span>
-				<pre><span class="sass-version"></span>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/sass-compiled.css&quot; type=&quot;text/css&quot; /&gt;</pre>
-			</div>
-
-			<div class="highlight">
-				<span class="highlight-title">
-					LESS Version
-				</span>
-				<pre><span class="sass-version"></span>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/less-compiled.css&quot; type=&quot;text/css&quot; /&gt;</pre>
-			</div>
-
-			<p>Put the code below in your HTML document:</p>
-			
-			<!-- Put this conde in your HTML file -->
-			<div class="highlight">
-				<span class="highlight-title">
-					HTML Document
-				</span>
-			<pre>&lt;div class=&quot;pic&quot;&gt;
-	&lt;img src=&quot;img/01.jpg&quot; class=&quot;pic-image&quot; alt=&quot;Pic&quot;/&gt;
-	&lt;span class=&quot;pic-caption bottom-to-top&quot;&gt;
-		&lt;h1 class=&quot;pic-title&quot;&gt;Pic Title&lt;/h1&gt;
-		&lt;p&gt;Some description or text.&lt;/p&gt;
-	&lt;/span&gt;
-&lt;/div&gt;</pre>
-</div>
-
-			<p>
-				The <label>.bottom-to-top</label> is the class with the effects of your choice, see example:
-			</p>
-
-			<!--Effect: Bottom to Top -->
-			<div class="pic">
-			    <img src="img/01.jpg" class="pic-image" alt="Pic"/>
-			    <span class="pic-caption bottom-to-top">
-			        <h1 class="pic-title">Pic Title</h1>
-			        <p>Some description or text.</p>
-			    </span>
-			</div>
-
-			<h2 class="title-line">List of Effects</h2>
-
-			<p>
-				Here is the list of classes and effect that you can use:
-			</p>
-			
-			<table>
-				<tr>
-					<td class="title">Class</td>
-					<td class="title">Description</td>
-				</tr>
-				<tr>
-					<td>.pic-title</td>
-					<td>Title of the image content</td>
-				</tr>
-				<tr>
-					<td>.bottom-to-top</td>
-					<td>Effect bottom to top</td>
-				</tr>
-				<tr>
-					<td>.top-to-bottom</td>
-					<td>Effect top to bottom</td>
-				</tr>
-				<tr>
-					<td>.left-to-right</td>
-					<td>Effect left to right</td>
-				</tr>
-				<tr>
-					<td>.right-to-left</td>
-					<td>Effect right to left</td>
-				</tr>
-				<tr>
-					<td>.rotate-in</td>
-					<td>Effect rotate in</td>
-				</tr>
-				<tr>
-					<td>.rotate-out</td>
-					<td>Effect rotate out</td>
-				</tr>
-				<tr>
-					<td>.open-up</td>
-					<td>Effect open up</td>
-				</tr>
-				<tr>
-					<td>.open-down</td>
-					<td>Effect open down</td>
-				</tr>
-				<tr>
-					<td>.open-left</td>
-					<td>Effect open left</td>
-				</tr>
-				<tr>
-					<td>.open-right</td>
-					<td>Effect open right</td>
-				</tr>
-				<tr>
-					<td>.come-left</td>
-					<td>Effect come to left</td>
-				</tr>
-				<tr>
-					<td>.come-right</td>
-					<td>Effect come to right</td>
-				</tr>
-			</table>
-
-			<h2 class="title-line">License</h2>
-			<p>
-				InContent is released under <b>MIT License</b>.
-			</p>
-			
-			<div class="btns-end">
-				<a href="https://github.com/brunodsgn/InContent/archive/master.zip" class="btn"><i class="fa fa-download"></i>DOWNLOAD .ZIP</a>
-				<a href="http://github.com/brunodsgn/incontent" class="btn"><i class="fa fa-github"></i>VIEW IN GITHUB</a>
-				<a href="http://bit.ly/BrunoTw" class="btn"><i class="fa fa-twitter"></i>SAY HELLO!</a>
-				<a class="btn qrcode"><i class="fa fa-qrcode"></i>QR CODE</a>
-			</div>
-			
-			<!-- MODAL -->
-			<div class="modal">
-		    	<span class="bt-close-modal pull-right">close x</span>    
-		        <div class="wrapper">
-					<h2>Test in your Mobile Device</h2>
-					<p>
-						Use some app for read the QR code and test in your mobile.
-						If you dont have, what do you waiting?! =D					
-					</p>
-					<p>
-						Take a look, its Free - QR Reader: <a href="http://bit.ly/18rWt4U">iPhone</a>, <a href="http://bit.ly/18LEhkB">Android</a> and <a href="http://bit.ly/1bFhgzY">Windows Phone</a>.
-					</p>
-					<img src="img/qrcode.jpg" alt="InContent - QRcode" />
-				</div>
-    		</div>
-
-		</div>
-
-	</section>
-
 	<footer>
 		<section class="wrapper">
+			<span class="pull-right">
+				
+			</span>
 			<p>
 				InContent by <a href="http://bit.ly/BrunoTw" title="Follow Bruno Rodrigues">Bruno Rodrigues.</a> | Images from <a href="http://www.dribbble.com" title="Dribbble">Dribbble</a>.
 			</p>
@@ -301,35 +149,9 @@
 		</section>
 	</footer>
 
-<!-- Libs -->
-	<script src="libs/modernizr.js" type="text/javascript"></script>
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<!-- TOUCH FRIENDLY IN MOBILE DEVICES -->
 	<script>
-		//document.addEventListener("touchstart", function(){}, true);
-	</script>
-	<script>
-		//Open Modal
-		$(".qrcode").click(function(){
-		    $(".modal").toggle(300);
-		});
-		//Close Modal
-		$(".bt-close-modal").click(function(){
-		    $(".modal").hide(500);
-		});
-
-
-		if(window.innerWidth <= 600){
-			$('.pic:hover .bottom-to-top').css('opacity', '0');
-
-			$('.pic .bottom-to-top').mouseover(function(){
-				$('.pic + .pic-caption').css('opacity', '1');
-			});
-
-			$('.pic .bottom-to-top').mouseout(function(){
-				$('.pic + .pic-caption').css('opacity', '0');
-			});
-		}
-
+		document.addEventListener("touchstart", function(){}, true);
 	</script>
 </body>
 </html>
