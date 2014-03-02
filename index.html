@@ -318,12 +318,12 @@
 		});
 
 		if(window.innerWidth <= 600){
-			$('.pic').mouseover(function(){
-				$('.pic-caption').css('opacity', '1');
+			$('.pic .bottom-to-top').mouseover(function(){
+				$('.pic + .pic-caption').css('opacity', '1');
 			});
 
-			$('.pic').mouseout(function(){
-				$('.pic-caption').css('opacity', '0');
+			$('.pic .bottom-to-top').mouseout(function(){
+				$('.pic + .pic-caption').css('opacity', '0');
 			});
 		}
 
