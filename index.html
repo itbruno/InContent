@@ -317,7 +317,10 @@
 		    $(".modal").hide(500);
 		});
 
+
 		if(window.innerWidth <= 600){
+			$('.pic:hover .bottom-to-top').css('opacity', '0');
+
 			$('.pic .bottom-to-top').mouseover(function(){
 				$('.pic + .pic-caption').css('opacity', '1');
 			});
