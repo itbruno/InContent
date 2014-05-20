@@ -30,6 +30,7 @@
     background: $maincolor;
     padding: 10px;
     text-align:center;
+    color: #fff;
     @include transparency(0);
 }
 
@@ -39,6 +40,7 @@
 .pic:hover .pic-image{
     @include prefix(transform, scale(1));
 }
+
 .pic-title{
     font-size: 1.8em;
 }
