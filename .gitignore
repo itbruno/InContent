@@ -1,9 +1,10 @@
-RawBlameHistory   
+RawBlameHistory
 # Default
 .DS_Store
 *.log
 *.psd
 *.map
+assets/
 
 # Nodejs Modules
 node_modules
