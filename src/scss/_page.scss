@@ -1,12 +1,4 @@
-@import "http://font-style: em;googleapis.com/css?family=Open+Sans)";
-
-$color1: rgba(231, 76, 60, 0.92);
-$color2: rgba(41, 128, 185, 0.92);
-$color3: rgba(44, 62, 80,0.92);
-$color4: rgba(46, 204, 113,0.92);
-$color5: rgba(73, 73, 73,0.92);
-
-$maincolor: $color3;
+@import "http://font-style: em;googleapis.com/css?family=Open+Sans";
 
 /*Globals*/
 body{
@@ -49,10 +41,15 @@ img{
 }
 
 header{
-    padding: 30px 20px;
     background: $maincolor + rgba(20,20,20,0.92);
     color: #ffffff;
     margin-bottom: 20px;
+    display: block;
+    @extend %clearfix;
+
+    .wrapper {
+        padding: 20px 0;
+    }
 }
 
 .btn-download{
@@ -69,7 +66,8 @@ header{
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
-    @include clearfix;
+    display: block;
+    @extend %clearfix;
 }
 
 footer{
@@ -79,29 +77,6 @@ footer{
     padding: 20px 0;
     text-align:left;
     font-size: 0.9em;
-}
-
-/*Animation Effect*/
-@keyframes anima{
-    from{
-        margin-top: -50px;
-        @include transparency(0);
-    }
-    to{
-        margin: auto;
-        @include transparency(1);
-    }
-}
-
-@-webkit-keyframes anima{
-    from{
-        margin-left: -20px;
-        @include transparency(0);
-    }
-    to{
-        margin-left: 10px;
-        @include transparency(1);
-    }
 }
 
 @media screen and (max-width: 560px){

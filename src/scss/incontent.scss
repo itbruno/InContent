@@ -1,29 +1,32 @@
 /*------------------------------------------|
 |   Title: InContent;                       |
 |   Author: Bruno Rodrigues;                |
+|   github: http://github.com/brunodsgn     |
 |   URL: bit.ly/BrunoTw                     |
-|------------------------------------------*/   
-
+|------------------------------------------*/
+@import 'mixins';
+@import 'variables';
 
 /*--- CONTENT STRUCTURE ---*/
 .pic{
-    max-width: 300px;
-    max-height: 200px;
+    width: 31%;
     position: relative;
     overflow: hidden;
-    margin: 10px;   
-    
-    display: inline-block;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    display: block;
+    float: left;
 
-    animation: anima 2s;
-    -webkit-animation: anima 2s;
-  
-   backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
+    @include prefix(animation, anima 2s);
+    @include prefix(backface-visibility, hidden);
+
+    img {
+        max-width: 100%;
+    }
 }
 .pic-3d{
-    -webkit-perspective: 500;
-    -webkit-transform-style: preserve-3d;
+    @include prefix(perspective, 500);
+    @include prefix(transform-style, preserve-3d);
 }
 
 .pic-caption{
@@ -31,19 +34,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: @maincolor;
+    background: $maincolor;
     padding: 10px;
     text-align:center;
-    .transparency(0);
+    @include transparency(0);
 }
 
 .pic-image{
-     -webkit-transform: scale(1.1);
-             transform: scale(1.1);
+    @include prefix(transform, scale(1.1));
 }
 .pic:hover .pic-image{
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    @include prefix(transform, scale(1));
 }
 .pic-title{
     font-size: 1.8em;
@@ -55,7 +56,7 @@ a ,a:hover,
 .pic-caption,
 .pic:hover .pic-caption,
 .pic:hover img{
-     .transition(all, 0.5s, ease);
+     @include prefix(transition, all 0.5s ease);
 }
 
 /*--- EFFECTS AND TRANSITIONS ---*/
@@ -72,14 +73,14 @@ a ,a:hover,
 .pic:hover .open-right,
 .pic:hover .come-left,
 .pic:hover .come-right{
-    .transparency(1);
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    @include transparency(1);
+    @include prefix(user-select, none);
+    @include prefix(touch-callout, none);
+    @include prefix(tap-highlight-color, rgba(0,0,0,0));
 }
 /*Bottom to Top*/
 .bottom-to-top{
-    top:50%;    
+    top:50%;
     left:0;
 }
 .pic:hover .bottom-to-top{
@@ -88,7 +89,7 @@ a ,a:hover,
 }
 /*Top to Bottom*/
 .top-to-bottom{
-    bottom:50%;    
+    bottom:50%;
     left:0;
 }
 .pic:hover .top-to-bottom{
@@ -116,90 +117,80 @@ a ,a:hover,
 }
 /*Rotate in*/
 .rotate-in{
-    transform: rotate(90deg) scale(0.1);
+    @include prefix(transform, rotate(90deg) scale(0.1));
     top:0;
     left: 0;
 }
 .pic:hover .rotate-in{
-    transform: rotate(360deg) scale(1);
+    @include prefix(transform, rotate(360deg) scale(1));
 }
 /*Rotate out*/
 .rotate-out{
-    transform: rotate(90deg) scale(3.0);
+    @include prefix(transform, rotate(90deg) scale(3.0));
     top:0;
     left: 0;
 }
 .pic:hover .rotate-out{
-    transform: rotate(360deg) scale(1);
+    @include prefix(transform, rotate(360deg) scale(1));
 }
 
 /*Open Up*/
 .open-down{
-    transform: rotateX(-180deg);
+    @include prefix(transform, rotateX(-180deg));
     top:0;
     left: 0;
 }
 .pic:hover .open-down{
-    transform: rotateX(0);
+    @include prefix(transform, rotateX(0));
 }
 
 
 /*Open down*/
 .open-up{
-    transform: rotateX(180deg);
+    @include prefix(transform, rotateX(180deg));
     top:0;
     left: 0;
 }
 .pic:hover .open-up{
-    transform: rotateX(0);
+    @include prefix(transform, rotateX(0));
 }
 
 /*Open Left*/
 .open-left{
-    transform: rotateY(180deg);
+    @include prefix(transform, rotateY(180deg));
     left:0;
     top:0;
 }
 .pic:hover .open-left{
-    transform: rotateY(0deg);
+    @include prefix(transform, rotateY(0deg));
 }
 
 /*Open Right*/
 .open-right{
-    transform: rotateY(-180deg);
+    @include prefix(transform, rotateY(-180deg));
     left:0;
     top:0;
 }
 .pic:hover .open-right{
-    transform: rotateY(0deg);
+    @include prefix(transform, rotateY(0deg));
 }
 
 /*Open Come In*/
 .come-left{
-    transform: rotateY(90deg) rotateX(90deg);
+    @include prefix(transform, rotateY(90deg) rotateX(90deg));
     left:0;
     top:0;
 }
 .pic:hover .come-left{
-    transform: rotateY(0) rotateX(0);
+    @include prefix(transform, rotateY(0) rotateX(0));
 }
 
 /*Open Come Out*/
 .come-right{
-    transform: rotateY(-90deg) rotateX(-90deg);
+    @include prefix(transform, rotateY(-90deg) rotateX(-90deg));
     left:0;
     top:0;
 }
 .pic:hover .come-right{
-    transform: rotateY(0) rotateX(0);
-}
-
-@media screen and (max-width: 560px){
-    .pic{
-        max-width: 400px;
-        max-height:  300px;
-        display: block;
-        animation: none;
-        margin: 10px auto;
-    }
+    @include prefix(transform, rotateY(0) rotateX(0));
 }

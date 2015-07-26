@@ -8,7 +8,7 @@
 }
 
 // Clearfix
-@mixin clearfix{
+%clearfix{
     &:before,
     &:after{
         content:'';
@@ -24,4 +24,27 @@
     -moz-opacity: $opacity;
     -khtml-opacity: $opacity;
     opacity: $opacity;
+}
+
+// Animations
+@keyframes anima{
+    from{
+        margin-top: -50px;
+        @include transparency(0);
+    }
+    to{
+        margin: auto;
+        @include transparency(1);
+    }
+}
+
+@-webkit-keyframes anima{
+    from{
+        margin-left: -20px;
+        @include transparency(0);
+    }
+    to{
+        margin-left: 10px;
+        @include transparency(1);
+    }
 }
