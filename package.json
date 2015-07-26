@@ -1,0 +1,22 @@
+{
+  "name": "InContent",
+  "version": "1.0.1",
+  "description": "Animated image content with description building with css",
+  "main": "incontent.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunodsgn/InContent.git"
+  },
+  "keywords": [
+    "incontent"
+  ],
+  "author": "Bruno Rodrigues - github.com/brunodsgn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunodsgn/InContent/issues"
+  },
+  "homepage": "https://github.com/brunodsgn/InContent"
+}
