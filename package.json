@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/brunodsgn/InContent/issues"
   },
-  "homepage": "https://github.com/brunodsgn/InContent"
+  "homepage": "https://github.com/brunodsgn/InContent",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-uglify": "^1.2.0"
+  }
 }
