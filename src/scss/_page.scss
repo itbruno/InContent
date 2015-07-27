@@ -1,11 +1,9 @@
-@import "http://font-style: em;googleapis.com/css?family=Open+Sans";
-
 /*Globals*/
 body{
     background: $maincolor;
     color: #fff;
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif, 'trebuhet ms',HelveticaNeue, arial;
+    font-family: $font-opensans;
     height: 100%;
     line-height: 20px;
 }
