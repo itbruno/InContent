@@ -8,12 +8,10 @@
 @import 'variables';
 
 /*--- CONTENT STRUCTURE ---*/
-.pic{
-    width: 31%;
+.pic {
+    @include size(33.3%, 220px);
     position: relative;
     overflow: hidden;
-    margin-left: 2%;
-    margin-bottom: 2%;
     display: block;
     float: left;
 
@@ -21,7 +19,24 @@
     @include prefix(backface-visibility, hidden);
 
     img {
+        position: absolute;
+        top: 0;
+        left: 0;
         max-width: 100%;
+    }
+
+    @media screen and (max-width: 880px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 300px;
+        float: none;
+        margin: 10px auto;
+
+        img {
+            width: 100%;
+        }
     }
 }
 .pic-3d{

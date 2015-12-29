@@ -26,6 +26,12 @@
     opacity: $opacity;
 }
 
+// Size
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
 // Animations
 @keyframes anima{
     from{
