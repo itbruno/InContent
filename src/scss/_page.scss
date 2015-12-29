@@ -46,7 +46,7 @@ header{
     @extend %clearfix;
 
     .wrapper {
-        padding: 20px 0;
+        margin: 20px auto;
     }
 }
 
@@ -64,8 +64,11 @@ header{
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
-    display: block;
     @extend %clearfix;
+
+    @media screen and (max-width: 960px) {
+        padding: 0 10px;
+    }
 }
 
 footer{
