@@ -3,9 +3,10 @@ body{
     background: $maincolor;
     color: #fff;
     font-size: 14px;
-    font-family: $font-opensans;
+    font-family: $font-base;
     height: 100%;
     line-height: 20px;
+    -webkit-font-smoothing: antialiased;
 }
 
 *{
