@@ -1,0 +1,24 @@
+// Header
+header{
+    background: $maincolor;
+    color: #ffffff;
+    margin-bottom: $gutter;
+    display: block;
+    text-align: center;
+    padding: $gutter 0;
+    @extend %clearfix;
+
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 35px;
+        margin: 0;
+        line-height: 1.2em;
+    }
+
+    p,
+    h1 > span {
+        color: lighten($maincolor,30%);
+    }
+}

@@ -31,7 +31,7 @@ gulp.task('imagemin', function() {
 
 // Watch
 gulp.task('watch', function(){
-    gulp.watch('src/scss/*.scss', ['compile']);
+    gulp.watch('src/scss/**/*.scss', ['compile']);
     gulp.watch('src/js/**/*.js', ['scripts']);
     gulp.watch('src/img/.{jpg, png, gif, svg}', ['imagemin']);
 });

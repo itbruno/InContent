@@ -1,9 +1,11 @@
 // Import scss Files
 
-// Reset
-@import "reset";
-// Some Mixins/Variables
-@import "variables";
-@import "mixins";
-// Page body style
-@import "page";
+// Settings
+@import "settings/reset";
+@import "settings/variables";
+@import "settings/mixins";
+
+// Partials
+@import "partials/base";
+@import "partials/header";
+@import "partials/footer";

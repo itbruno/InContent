@@ -1,0 +1,8 @@
+footer{
+    margin-top: $gutter;
+    background: darken($maincolor, 5%);
+    color: lighten($maincolor, 20%);
+    padding: $gutter 0;
+    text-align: center;
+    font-size: 14px;
+}
