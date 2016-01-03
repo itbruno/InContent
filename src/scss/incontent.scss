@@ -14,8 +14,6 @@
     overflow: hidden;
     display: block;
     float: left;
-
-    @include prefix(animation, anima 2s);
     @include prefix(backface-visibility, hidden);
 
     img {
