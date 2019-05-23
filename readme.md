@@ -92,4 +92,4 @@ InContent is released under MIT License.
 </p>
 <img src="http://i.imgur.com/fq2Aza6.png" alt="InContent - QRcode" />
 
-<a href="http://bit.ly/BrunoTw" >Say hello</a>
+<a href="http://itbruno.com.br?from=github-incontent">Say hello</a>
