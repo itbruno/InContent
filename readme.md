@@ -17,7 +17,7 @@ For <b>LESS</b> compiled:
 
 <p>The <code>.bottom-to-top</code> is the class of effect that your choice.</p>
 
-<h2>See demo <a href="http://bit.ly/inContent" title="See demo">here.</h2>
+<h2>See demo <a href="https://itbruno.github.io/InContent" title="See demo">here.</h2>
 
 <p>Here is the list of classes and effect that you can use:	</p>
 <table>
